@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
 import './styles/global.scss'
+import MainPage from "./components/Maincontent/mainPage";
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
         <Layout.Header style={{ background: "#fff", padding: 0 }}>
           <Header />
         </Layout.Header>
-
+       <MainPage />
         
       </Layout>
     </Layout>

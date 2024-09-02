@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Layout } from "antd";
 import styles from "./Header.module.scss";
-import { Center } from "@chakra-ui/react";
+// import { Center } from "@chakra-ui/react";
 
 const { Header: AntHeader } = Layout;
 
