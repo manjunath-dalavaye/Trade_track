@@ -24,7 +24,6 @@ export default function App() {
           <Route path="/NFT" element={<NftSection />} />
           <Route path="/Stack" element ={<StackSection />} />
           <Route path="/Wallet" element ={<Wallet />} />
-
         </Routes>
 
       </Layout>

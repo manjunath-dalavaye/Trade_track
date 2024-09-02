@@ -2,16 +2,16 @@
 import { Layout, Menu } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import {
-  BookOutlined,
   SecurityScanOutlined,
   WalletOutlined,
   SettingOutlined,
   AppstoreOutlined,
   CloudOutlined,
-  BuildOutlined
+  BuildOutlined,
+  BookOutlined
 } from '@ant-design/icons';
-import { MenuItemGroupProps } from 'antd/es/menu';
-import { Book } from '../../icons';
+import { position } from '@chakra-ui/react';
+
 
 const { Sider } = Layout;
 
@@ -20,7 +20,7 @@ const Sidebar = () => {
   const menuItems  = [
     {
       key: '1',
-      icon: <Book/>,
+      icon: <BookOutlined/>,
       label: 'News',
       style: { marginTop: '70px', height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
     },
@@ -58,7 +58,7 @@ const Sidebar = () => {
       key: '7',
       icon: <CloudOutlined />,
       label: 'Cloud money',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: { position:'absolute', height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff', bottom:'0px' },
     },
   ];
 
