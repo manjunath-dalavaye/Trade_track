@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Layout } from "antd";
 import styles from "./Header.module.scss";
-import { Center } from "@chakra-ui/react";
+import ProfileDropdown from "./Profile";
+
 
 const { Header: AntHeader } = Layout;
 
@@ -48,7 +49,7 @@ const Header: React.FC = () => {
               console.log("Click on the button");
             }}
           >
-            <img src="/src/assets/ellipse-54.svg"  style={{width:20, height:20}}/>
+          <ProfileDropdown/>           
           </Button>
         </div>
       </div>
