@@ -14,21 +14,13 @@
     "@reduxjs/toolkit": "^2.2.7",
     "@types/react-router-dom": "^5.3.3",
     "antd": "^5.20.3",
-<<<<<<< HEAD
     "chart.js": "^4.4.4",
-=======
-    "date-fns": "^3.6.0",
->>>>>>> cd9cb512f246f5deb2bbafdaeb029d2544509df8
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
-<<<<<<< HEAD
     "recharts": "^2.12.7",
-=======
-    "react-router-dom": "^6.26.1",
->>>>>>> cd9cb512f246f5deb2bbafdaeb029d2544509df8
     "sass": "^1.77.8"
   },
   "devDependencies": {
