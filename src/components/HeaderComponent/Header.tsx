@@ -1,10 +1,7 @@
 import React from "react";
-import {  Layout } from "antd";
+import {  Layout,Button } from "antd";
 import styles from "./Header.module.scss";
-<<<<<<< HEAD
 import ProfileDropdown from "./Profile";
-=======
->>>>>>> ceffce4c16cdccdd099ff90a311c1329abe23a54
 
 
 const { Header: AntHeader } = Layout;
@@ -46,7 +43,6 @@ const Header: React.FC = () => {
             alignItems: "center",
           }}
         >
-<<<<<<< HEAD
           <Button
             type="link"
             onClick={() => {
@@ -55,10 +51,6 @@ const Header: React.FC = () => {
           >
           <ProfileDropdown/>           
           </Button>
-=======
-         
-          <img src="/src/assets/ellipse-54.svg"  style={{width:20, height:20}}/>
->>>>>>> ceffce4c16cdccdd099ff90a311c1329abe23a54
         </div>
       </div>
     </AntHeader>
