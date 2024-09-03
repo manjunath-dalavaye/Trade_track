@@ -44,12 +44,21 @@
 }
 .vertical-line {
   width: 1px;
-  height: 37px; 
-  background: #a9acbb; 
+  height: 37px;
+  background: #a9acbb;
   margin: 0 10px;
 }
 
+.data{
+  background-color: white;
+}
+// .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-active, :where(.css-dev-only-do-not-override-11lehqq).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item-active, :where(.css-dev-only-do-not-override-11lehqq).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title-active, :where(.css-dev-only-do-not-override-11lehqq).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title-active {
+//      background-color: white;
+// }
 
+// .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-active{
+// background-color: white;
+// }
 
 
 
@@ -57,5 +66,5 @@
 .wallet-connect {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
 }

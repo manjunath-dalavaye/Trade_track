@@ -1,22 +1,25 @@
-import React from 'react';
 import { Layout, Menu } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import {
-  BookOutlined,
   SecurityScanOutlined,
   WalletOutlined,
   SettingOutlined,
   AppstoreOutlined,
   CloudOutlined,
-  BuildOutlined
+  BuildOutlined,
+  BookOutlined
 } from '@ant-design/icons';
+import { position } from '@chakra-ui/react';
+
 
 const { Sider } = Layout;
 
 const Sidebar = () => {
-  const menuItems = [
+  const navigate = useNavigate();
+  const menuItems  = [
     {
       key: '1',
-      icon: <BookOutlined />,
+      icon: <BookOutlined/>,
       label: 'News',
       style: { marginTop: '70px', height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
     },
@@ -54,9 +57,33 @@ const Sidebar = () => {
       key: '7',
       icon: <CloudOutlined />,
       label: 'Cloud money',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: { position:'absolute', height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff', bottom:'0px' },
     },
   ];
+
+  const handleMenuClick = (event:any) => {
+    console.log("event :",event);
+    const { key, keyPath, item } = event; 
+    
+    switch (key) {
+      case '1':
+        navigate("News")
+        break;
+      case '2':
+        navigate("NFT")
+        break;
+      case '3':
+          navigate("Stack")
+          break;
+      case '4':
+            navigate("Wallet")
+            break;
+
+      default:
+        navigate("Stack")
+        break;
+    }
+  };
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
@@ -79,6 +106,7 @@ const Sidebar = () => {
             color: '#fff'
           }}
           items={menuItems}
+          onClick={handleMenuClick} 
         />
       </Sider>
     </Layout>
