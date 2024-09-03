@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0f546fe21c2c83b1def28ad418d089054c8f0c43
 import React from 'react';
 import { Dropdown, Menu, Tabs } from 'antd';
 import {
@@ -16,59 +20,61 @@ import {
 const { TabPane } = Tabs;
 
 const ProfileDropdown: React.FC = () => {
-  
+  const menuItemStyle: React.CSSProperties = {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '8px 16px',
+  };
+
   const profileContent = (
-    <>
-   
-      <Menu.Item key="editProfile" className='data'  icon={<EditOutlined />}>
+    <div>
+    <Menu>
+      <Menu.Item key="editProfile" style={menuItemStyle} icon={<EditOutlined />}>
         Edit Profile
       </Menu.Item>
-      <Menu.Item key="viewProfile" icon={<EyeOutlined />}>
+      <Menu.Item key="viewProfile" style={menuItemStyle} icon={<EyeOutlined />}>
         View Profile
       </Menu.Item>
-      <Menu.Item key="socialProfile" icon={<TeamOutlined />}>
+      <Menu.Item key="socialProfile" style={menuItemStyle} icon={<TeamOutlined />}>
         Social Profile
       </Menu.Item>
-      <Menu.Item key="billing" icon={<DollarOutlined />}>
+      <Menu.Item key="billing" style={menuItemStyle} icon={<DollarOutlined />}>
         Billing
       </Menu.Item>
-      <Menu.Item key="logout" icon={<LogoutOutlined />}>
+      <Menu.Item key="logout" style={menuItemStyle} icon={<LogoutOutlined />}>
         Logout
       </Menu.Item>
-  
-  </>
-    
+      </Menu>
+    </div>
   );
 
   const settingsContent = (
-    <>
-    
-      <Menu.Item key="support" icon={<PhoneOutlined />}>
+    <div>
+    <Menu>
+      <Menu.Item key="support" style={menuItemStyle} icon={<PhoneOutlined />}>
         Support
       </Menu.Item>
-      <Menu.Item key="accountSettings" icon={<SettingOutlined />}>
+      <Menu.Item key="accountSettings" style={menuItemStyle} icon={<SettingOutlined />}>
         Account Settings
       </Menu.Item>
-      <Menu.Item key="privacyCenter" icon={<LockOutlined />}>
+      <Menu.Item key="privacyCenter" style={menuItemStyle} icon={<LockOutlined />}>
         Privacy Center
       </Menu.Item>
-      <Menu.Item key="feedback" icon={<MailOutlined />}>
+      <Menu.Item key="feedback" style={menuItemStyle} icon={<MailOutlined />}>
         Feedback
       </Menu.Item>
-      <Menu.Item key="history" icon={<HistoryOutlined />}>
+      <Menu.Item key="history" style={menuItemStyle} icon={<HistoryOutlined />}>
         History
       </Menu.Item>
-    
-    </>
+      </Menu>
+    </div>
   );
 
   const menu = (
     <Menu>
       <Menu.Divider />
-      <div style={{ padding: '16px', textAlign: 'center' ,width:'180px' }}>
-        <Tabs
-          defaultActiveKey="1"   
-        >
+      <div style={{ padding: '16px', textAlign: 'center', width: '200px' }}>
+        <Tabs defaultActiveKey="1">
           <TabPane tab="Profile" key="1">
             {profileContent}
           </TabPane>
