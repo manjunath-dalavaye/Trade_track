@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/Stack" element ={<StackSection />} />
           <Route path="/Wallet" element ={<Wallet />} />
         </Routes>
-
+      <MainPage />
       </Layout>
     </Layout>
   );

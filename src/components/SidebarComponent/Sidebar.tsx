@@ -9,7 +9,7 @@ import {
   BuildOutlined,
   BookOutlined
 } from '@ant-design/icons';
-import { position } from '@chakra-ui/react';
+// import { position } from '@chakra-ui/react';
 
 
 const { Sider } = Layout;
