@@ -1,0 +1,39 @@
+.card-title {
+    margin-top: 7px;
+  
+    span {
+      color: var(--Text, #4C506B);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      margin-top: 200px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    strong {
+      font-size: 44px;
+    }
+  }
+  
+  .tab-span {
+    color: var(--Text, #4C506B);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .card-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+  }
+  
+  .tabs-container {
+    margin-bottom: 0;
+  }
+  

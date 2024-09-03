@@ -10,6 +10,12 @@
         { "name": "12 AM", "pv": 4000 }
       ],
       "week": [
+        { "name": "Week 1", "pv": 2400 },
+        { "name": "Week 2", "pv": 1398 },
+        { "name": "Week 3", "pv": 9800 },
+        { "name": "Week 4", "pv": 3908 }
+      ],
+      "month": [
         { "name": "Mon", "pv": 2400 },
         { "name": "Tue", "pv": 1398 },
         { "name": "Wed", "pv": 9800 },
@@ -17,12 +23,6 @@
         { "name": "Fri", "pv": 4800 },
         { "name": "Sat", "pv": 3800 },
         { "name": "Sun", "pv": 4300 }
-      ],
-      "month": [
-        { "name": "Week 1", "pv": 2400 },
-        { "name": "Week 2", "pv": 1398 },
-        { "name": "Week 3", "pv": 9800 },
-        { "name": "Week 4", "pv": 3908 }
       ],
       "year": [
         { "name": "Jan", "pv": 2400 },
