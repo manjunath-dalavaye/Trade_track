@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 0f546fe21c2c83b1def28ad418d089054c8f0c43
 import React from 'react';
 import { Dropdown, Menu, Tabs } from 'antd';
 import {
@@ -96,3 +92,9 @@ const ProfileDropdown: React.FC = () => {
 };
 
 export default ProfileDropdown;
+
+
+
+
+
+
