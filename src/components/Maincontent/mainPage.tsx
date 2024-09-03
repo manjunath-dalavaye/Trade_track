@@ -17,7 +17,7 @@ const MainPage: React.FC = () => {
   }, []);
 
   return (
-    <Row gutter={16} style={{ marginTop: 20, padding: 30 }}>
+    <Row gutter={16} style={{ marginTop: 5, padding: 5 }}>
       <Col span={8}>
         <Card title="Your Balance">
           <ResponsiveContainer width="100%" height={150}>

@@ -15,23 +15,32 @@ import { Route, Routes } from "react-router-dom";
 export default function App() {
   return (
     <Layout style={{ minHeight: "100vh", borderRadius: "0 12px 14px 8px" }}>
-      <Layout.Sider width={225}>
+      <Layout.Sider width="14.0625rem">
         <Sidebar />
       </Layout.Sider>
 
       <Layout>
-        <Layout.Header style={{ background: "#fff", padding: 0 }}>
-          <Header />
-        </Layout.Header>
-        <Routes>
-          <Route path="/News" element={<NewsSection />} />
-          <Route path="/NFT" element={<NftSection />} />
-          <Route path="/Stack" element ={<StackSection />} />
-          <Route path="/Wallet" element ={<Wallet />} />
-        </Routes>
-      <MainPage />
-      <TableComponent />
+       <Layout.Header style={{background: "#FFF",padding:0}}>
+       <Header />
+      
+       </Layout.Header>
+         
+       <TableComponent />
+     
       </Layout>
     </Layout>
   );
 }
+
+
+       {/* <Routes>
+          <Route path="/News" element={<NewsSection />} />
+          <Route path="/NFT" element={<NftSection />} />
+          <Route path="/Stack" element ={<StackSection />} />
+          <Route path="/Wallet" element ={<Wallet />} />
+        </Routes> */}
+
+
+
+
+        
