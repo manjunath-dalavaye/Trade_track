@@ -1,19 +1,19 @@
 .card-title {
-    margin-top: 7px;
+    margin-top: 0.4375rem;
   
     span {
       color: var(--Text, #4C506B);
       font-feature-settings: 'liga' off, 'clig' off;
       font-family: "DM Sans";
-      margin-top: 200px;
-      font-size: 18px;
+      margin-top: 12.5rem;
+      font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
     }
   
     strong {
-      font-size: 44px;
+      font-size: 2.75rem;
     }
   }
   
@@ -29,8 +29,8 @@
   
   .card-container {
     width: 100%;
-    max-width: 600px;
-    height: 400px;
+    max-width: 37.5rem;
+    height: 25rem;
   }
   
   .tabs-container {
