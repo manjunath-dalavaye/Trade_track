@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
 import { Row, Col, Card, Tabs } from 'antd';
+import ProgressBar from './ProgressBar';
 
 const { TabPane } = Tabs;
 
@@ -18,7 +19,7 @@ const MainPage: React.FC = () => {
 
   return (
     <Row gutter={16} style={{ marginTop: 20, padding: 30 }}>
-      <Col span={8}>
+      <Col span={10}>
         <Card title="Your Balance">
           <ResponsiveContainer width="100%" height={150}>
             <LineChart data={data[activeKey]}>
@@ -33,8 +34,13 @@ const MainPage: React.FC = () => {
           </Tabs>
         </Card>
       </Col>
+      <Col span={8}>
+          <ProgressBar />
+      </Col>
     </Row>
+    
   );
+
 };
 
 export default MainPage;

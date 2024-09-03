@@ -1,7 +1,7 @@
 import { Layout } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
-import './styles/global.scss'
+import "./styles/global.scss";
 import MainPage from "./components/Maincontent/mainPage";
 import { Route, Routes } from "react-router-dom";
 import NewsSection from "./components/NewsSectionComponent/NewsSection";
@@ -24,10 +24,11 @@ export default function App() {
         <Routes>
           <Route path="/News" element={<NewsSection />} />
           <Route path="/NFT" element={<NftSection />} />
-          <Route path="/Stack" element ={<StackSection />} />
-          <Route path="/Wallet" element ={<Wallet />} />
+          <Route path="/Stack" element={<StackSection />} />
+          <Route path="/Wallet" element={<Wallet />} />
         </Routes>
-
+        <MainPage />
+        
       </Layout>
     </Layout>
   );
