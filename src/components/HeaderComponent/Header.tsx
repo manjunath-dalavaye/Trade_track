@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Layout } from "antd";
 import styles from "./Header.module.scss";
-import { Center } from "@chakra-ui/react";
+import SearchBar from './SearchBar'; 
+// import { Center } from "@chakra-ui/react";
 
 const { Header: AntHeader } = Layout;
 
@@ -15,7 +16,8 @@ const Header: React.FC = () => {
         <div className={styles["nav-item2"]}>
           <div className={styles["child-item1"]}>Crypto assets</div>
           <div className={styles["vertical-line"]}></div>
-          <div className={styles["child-item2"]}>Stocks</div>
+          <div className={styles["child-item2"]}>
+            <SearchBar /></div>
         </div>
       </div>
       <div
