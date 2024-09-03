@@ -2,7 +2,7 @@ import React from "react";
 import {  Layout  } from "antd";
 import styles from "./Header.module.scss";
 import SearchBar from './SearchBar'; 
-// import { Center } from "@chakra-ui/react";
+
 
 const { Header: AntHeader } = Layout;
 

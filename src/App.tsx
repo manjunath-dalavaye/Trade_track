@@ -2,7 +2,6 @@ import { Layout } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
 import './styles/global.scss'
-import MainPage from "./components/Maincontent/mainPage";
 import { Route, Routes } from "react-router-dom";
 import NewsSection from "./components/NewsSectionComponent/NewsSection";
 import NftSection from "./components/NFTComponent/NFT";
@@ -27,7 +26,6 @@ export default function App() {
           <Route path="/Stack" element ={<StackSection />} />
           <Route path="/Wallet" element ={<Wallet />} />
         </Routes>
-
       </Layout>
     </Layout>
   );
