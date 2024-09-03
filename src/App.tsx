@@ -7,6 +7,7 @@ import NewsSection from "./components/NewsSectionComponent/NewsSection";
 import NftSection from "./components/NFTComponent/NFT";
 import StackSection from "./components/StackComponent/StackSection";
 import Wallet from "./components/WalletComponent/Wallet";
+import MainPage from "./components/Maincontent/mainPage";
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/Stack" element ={<StackSection />} />
           <Route path="/Wallet" element ={<Wallet />} />
         </Routes>
+      <MainPage />
       </Layout>
     </Layout>
   );
