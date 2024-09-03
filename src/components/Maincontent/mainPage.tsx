@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
 import { Row, Col, Card, Tabs } from 'antd';
