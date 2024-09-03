@@ -2,12 +2,14 @@ import { Layout } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
 import './styles/global.scss'
-import { Route, Routes } from "react-router-dom";
+import MainPage from "./components/Maincontent/mainPage";
+import TableComponent from "./components/TableComponent/TableComponent";
 import NewsSection from "./components/NewsSectionComponent/NewsSection";
 import NftSection from "./components/NFTComponent/NFT";
 import StackSection from "./components/StackComponent/StackSection";
 import Wallet from "./components/WalletComponent/Wallet";
-import MainPage from "./components/Maincontent/mainPage";
+import { Route, Routes } from "react-router-dom";
+
 
 
 export default function App() {
@@ -28,6 +30,7 @@ export default function App() {
           <Route path="/Wallet" element ={<Wallet />} />
         </Routes>
       <MainPage />
+      <TableComponent />
       </Layout>
     </Layout>
   );
