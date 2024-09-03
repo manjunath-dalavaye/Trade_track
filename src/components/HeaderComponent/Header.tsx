@@ -17,7 +17,8 @@ const Header: React.FC = () => {
           <div className={styles["child-item1"]}>Crypto assets</div>
           <div className={styles["vertical-line"]}></div>
           <div className={styles["child-item2"]}>
-            <SearchBar /></div>
+            <SearchBar />
+          </div>
         </div>
       </div>
       <div
