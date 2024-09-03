@@ -8,6 +8,7 @@ import NftSection from "./components/NFTComponent/NFT";
 import StackSection from "./components/StackComponent/StackSection";
 import Wallet from "./components/WalletComponent/Wallet";
 import MainPage from "./components/Maincontent/mainPage";
+import TableComponent from "./components/TableComponent/TableComponent";
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/Wallet" element ={<Wallet />} />
         </Routes>
       <MainPage />
+      <TableComponent />
       </Layout>
     </Layout>
   );
