@@ -1,7 +1,7 @@
 
 import PieChartCircle from "./PieChartCircle";
 import ProgressBar from "./ProgressBar";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import { Row, Col, Card, Tabs } from "antd";
 import { useGetChartDataQuery } from "../../Services/ChartApi";
@@ -22,16 +22,16 @@ interface TimeSeriesData {
 }
 
 const MainPage: React.FC = () => {
-  const [activeKey, setActiveKey] = useState("today");
-  const [data, setData] = useState<any>({});
+  // const [activeKey, setActiveKey] = useState("today");
+  // const [data, setData] = useState<any>({});
 
   // Fetch data from db.json
-  useEffect(() => {
-    fetch("/db.json")
-      .then((response) => response.json())
-      .then((data) => setData(data.data)) // Adjust if your JSON structure is different
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/db.json")
+  //     .then((response) => response.json())
+  //     .then((data) => setData(data.data)) // Adjust if your JSON structure is different
+  //     .catch((error) => console.error("Error fetching data:", error));
+  // }, []);
   const [activeKey, setActiveKey] = useState<string>("today");
   const { data, isError, isLoading, isSuccess } = useGetChartDataQuery();
 
@@ -115,6 +115,8 @@ const MainPage: React.FC = () => {
       <Col span={4}>
         <ProgressBar/>
       </Col>
+    </Row>
+    </Col>
     </Row>
   );
 };
