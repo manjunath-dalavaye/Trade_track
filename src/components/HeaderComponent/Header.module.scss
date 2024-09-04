@@ -1,12 +1,16 @@
 .header {
+  width: auto;
+  height: 4.0625rem;
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
 }
 
@@ -14,7 +18,7 @@
   color: var(--Text, #4c506b);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -28,7 +32,7 @@
   color: var(--Crypto-purple, #453de0);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -37,16 +41,16 @@
   color: var(--Label, #a9acbb);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .vertical-line {
-  width: 1px;
-  height: 37px;
+  width: 0.0625rem;
+  height: 2.3125rem;
   background: #a9acbb;
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .data{
@@ -66,5 +70,5 @@
 .wallet-connect {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }

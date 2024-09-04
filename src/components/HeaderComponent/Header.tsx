@@ -1,7 +1,9 @@
 import React from "react";
+import {  Button, Layout  } from "antd";
 import {  Layout  } from "antd";
 import styles from "./Header.module.scss";
 import SearchBar from './SearchBar'; 
+import ProfileDropdown from "./Profile";
 // import { Center } from "@chakra-ui/react";
 
 const { Header: AntHeader } = Layout;
@@ -17,7 +19,8 @@ const Header: React.FC = () => {
           <div className={styles["child-item1"]}>Crypto assets</div>
           <div className={styles["vertical-line"]}></div>
           <div className={styles["child-item2"]}>
-            <SearchBar /></div>
+            <SearchBar />
+          </div>
         </div>
       </div>
       <div
@@ -44,6 +47,17 @@ const Header: React.FC = () => {
             alignItems: "center",
           }}
         >
+       
+        
+          <Button
+            type="link"
+            onClick={() => {
+              console.log("Click on the button");
+            }}
+          >
+          <ProfileDropdown/>           
+          </Button>
+          {/* <img src="/src/assets/ellipse-54.svg"  style={{width:20, height:20}}/> */}
          
           <img src="/src/assets/ellipse-54.svg"  style={{width:20, height:20}}/>
         </div>
