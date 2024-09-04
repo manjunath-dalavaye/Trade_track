@@ -1,43 +1,42 @@
 {
-    "data": {
-      "today": [
-        { "name": "12 AM", "pv": 400 },
-        { "name": "4 AM", "pv": 800 },
-        { "name": "8 AM", "pv": 1200 },
-        { "name": "12 PM", "pv": 1600 },
-        { "name": "4 PM", "pv": 2400 },
-        { "name": "8 PM", "pv": 3200 },
-        { "name": "12 AM", "pv": 4000 }
-      ],
-      "week": [
-        { "name": "Week 1", "pv": 2400 },
-        { "name": "Week 2", "pv": 1398 },
-        { "name": "Week 3", "pv": 9800 },
-        { "name": "Week 4", "pv": 3908 }
-      ],
-      "month": [
-        { "name": "Mon", "pv": 2400 },
-        { "name": "Tue", "pv": 1398 },
-        { "name": "Wed", "pv": 9800 },
-        { "name": "Thu", "pv": 3908 },
-        { "name": "Fri", "pv": 4800 },
-        { "name": "Sat", "pv": 3800 },
-        { "name": "Sun", "pv": 4300 }
-      ],
-      "year": [
-        { "name": "Jan", "pv": 2400 },
-        { "name": "Feb", "pv": 1398 },
-        { "name": "Mar", "pv": 9800 },
-        { "name": "Apr", "pv": 3908 },
-        { "name": "May", "pv": 4800 },
-        { "name": "Jun", "pv": 3800 },
-        { "name": "Jul", "pv": 4300 },
-        { "name": "Aug", "pv": 2400 },
-        { "name": "Sep", "pv": 1398 },
-        { "name": "Oct", "pv": 9800 },
-        { "name": "Nov", "pv": 3908 },
-        { "name": "Dec", "pv": 4300 }
-      ]
-    }
+  "data": {
+    "today": [
+      { "name": "12 AM", "pv": 400 },
+      { "name": "4 AM", "pv": 800 },
+      { "name": "8 AM", "pv": 1200 },
+      { "name": "12 PM", "pv": 1600 },
+      { "name": "4 PM", "pv": 2400 },
+      { "name": "8 PM", "pv": 3200 },
+      { "name": "12 AM", "pv": 4000 }
+    ],
+    "week": [
+      { "name": "Week 1", "pv": 2400 },
+      { "name": "Week 2", "pv": 1398 },
+      { "name": "Week 3", "pv": 9800 },
+      { "name": "Week 4", "pv": 3908 }
+    ],
+    "month": [
+      { "name": "Mon", "pv": 2400 },
+      { "name": "Tue", "pv": 1398 },
+      { "name": "Wed", "pv": 9800 },
+      { "name": "Thu", "pv": 3908 },
+      { "name": "Fri", "pv": 4800 },
+      { "name": "Sat", "pv": 3800 },
+      { "name": "Sun", "pv": 4300 }
+    ],
+    "year": [
+      { "name": "Jan", "pv": 2400 },
+      { "name": "Feb", "pv": 1398 },
+      { "name": "Mar", "pv": 9800 },
+      { "name": "Apr", "pv": 3908 },
+      { "name": "May", "pv": 4800 },
+      { "name": "Jun", "pv": 3800 },
+      { "name": "Jul", "pv": 4300 },
+      { "name": "Aug", "pv": 2400 },
+      { "name": "Sep", "pv": 1398 },
+      { "name": "Oct", "pv": 9800 },
+      { "name": "Nov", "pv": 3908 },
+      { "name": "Dec", "pv": 4300 }
+    ]
   }
-  
+}

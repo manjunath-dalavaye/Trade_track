@@ -26,18 +26,13 @@ export default function App() {
        <Header />
        <Row>
         <Col span={10}>
-        <div style={{backgroundColor:"blue", width:"36.375rem",height:"18.625rem", marginTop:"1.56rem",marginLeft:"3.54rem"}}>
-
-          {/* <MainPage /> */}
-        </div>
+          <MainPage />
         </Col>
         <Col span={8}>
-        <div style={{backgroundColor:"Red", width:"24.375rem",height:"18.625rem", marginTop:"1.56rem"}}>Chart Component</div>
+       
 
         </Col>
         <Col span={6}>
-        <div style={{backgroundColor:"Red", width:"23.1875rem",height:"9.5rem", marginTop:"1.56rem"}}>Chart Component</div>
-        <div style={{backgroundColor:"Red", width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Chart Component</div>
 
         </Col>
        </Row>
