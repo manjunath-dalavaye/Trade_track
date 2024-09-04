@@ -32,6 +32,7 @@ const SearchBar: React.FC = () => {
         onSelect={globalThis.console.log}
         dropdownStyle={{ fontSize: '18px' }} 
       >
+        
         <Input 
           placeholder="Stocks" 
           style={{ 

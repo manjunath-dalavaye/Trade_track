@@ -1,7 +1,7 @@
 import { Col, Layout, Row } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
-import './styles/global.scss'
+import "./styles/global.scss";
 import MainPage from "./components/Maincontent/mainPage";
 
 import NewsSection from "./components/NewsSectionComponent/NewsSection";

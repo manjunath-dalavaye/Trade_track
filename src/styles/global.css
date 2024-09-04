@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background-color: #f8f9fd;
+}
+
+.ant-layout-header {
+  background: #f8f9fd;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-layout-content {
+  background: #f8f9fd;
+}/*# sourceMappingURL=global.css.map */

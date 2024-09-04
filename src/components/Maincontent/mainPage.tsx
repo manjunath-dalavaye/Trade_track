@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 import PieChartCircle from "./PieChartCircle";
 import ProgressBar from "./ProgressBar";
 import React, { useState } from "react";
+=======
+
+import PieChartCircle from "./PieChartCircle";
+import ProgressBar from "./ProgressBar";
+import React, {useState } from "react";
+>>>>>>> eb5aa1004c5ff670099ab9ca1e95494bd459f856
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import { Row, Col, Card, Tabs } from "antd";
 import { useGetChartDataQuery } from "../../Services/ChartApi";
@@ -14,6 +21,16 @@ interface DataPoint {
 }
 
 const MainPage: React.FC = () => {
+  // const [activeKey, setActiveKey] = useState("today");
+  // const [data, setData] = useState<any>({});
+
+  // Fetch data from db.json
+  // useEffect(() => {
+  //   fetch("/db.json")
+  //     .then((response) => response.json())
+  //     .then((data) => setData(data.data)) // Adjust if your JSON structure is different
+  //     .catch((error) => console.error("Error fetching data:", error));
+  // }, []);
   const [activeKey, setActiveKey] = useState<string>("today");
   const { data, isError, isLoading, isSuccess } = useGetChartDataQuery();
 
