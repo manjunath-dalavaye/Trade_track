@@ -1,21 +1,16 @@
+import PieChartCircle from "./PieChartCircle";
+import ProgressBar from "./ProgressBar";
 import React, { useState } from "react";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import { Row, Col, Card, Tabs } from "antd";
 import { useGetChartDataQuery } from "../../Services/ChartApi";
-import  './mainPage.scss'
+import './mainPage.scss';
 
 const { TabPane } = Tabs;
 
 interface DataPoint {
   name: string;
   pv: number;
-}
-
-interface TimeSeriesData {
-  today: DataPoint[];
-  week: DataPoint[];
-  month: DataPoint[];
-  year: DataPoint[];
 }
 
 const MainPage: React.FC = () => {
@@ -40,56 +35,60 @@ const MainPage: React.FC = () => {
   );
 
   return (
-    <Row gutter={16} style={{ marginTop: 5, padding: 5 }}>
-      <Col span={8}>
-        <Card title="Your Balance">
-          <ResponsiveContainer width="100%" height={150}>
-            <LineChart data={data[activeKey]}>
-              <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
-            </LineChart>
-          </ResponsiveContainer>
-          <Tabs
-            defaultActiveKey="today"
-            onChange={(key) => setActiveKey(key)}
-            tabBarStyle={{ marginBottom: 0 }}
-            className="tabs-container"
-          >
-            <TabPane
-              tab={
-                <span className="tab-span">
-                  Today
-                </span>
-              }
-              key="today"
+    <Card
+      title="Your balance"
+      style={{
+        width: "36.375rem",
+        height: "18.625rem",
+        marginTop: "1.56rem",
+        marginLeft: "3.54rem",
+        borderRadius: "10px",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+      }}
+      headStyle={{
+        fontSize: "1rem",
+        fontWeight: "bold",
+        color: "#4A4A4A",
+      }}
+      bodyStyle={{
+        padding: "1.5rem",
+      }}
+    >
+      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#333" }}>
+        ${totalBalance.toLocaleString()}
+      </div>
+      <div className="responsive-chart-container" style={{ marginTop: "1rem" }}>
+        <ResponsiveContainer width="100%" height={150}>
+          <LineChart data={data[activeKey]}>
+            <Line
+              type="monotone"
+              dataKey="pv"
+              stroke="#4A4A4A"
+              strokeWidth={2}
+              dot={false}
             />
-            <TabPane
-              tab={
-                <span className="tab-span">
-                  This Week
-                </span>
-              }
-              key="week"
-            />
-            <TabPane
-              tab={
-                <span className="tab-span">
-                  This Month
-                </span>
-              }
-              key="month"
-            />
-            <TabPane
-              tab={
-                <span className="tab-span">
-                  This Year
-                </span>
-              }
-              key="year"
-            />
-          </Tabs>
-        </Card>
-      </Col>
-    </Row>
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+      <Tabs
+        defaultActiveKey="today"
+        onChange={(key) => setActiveKey(key)}
+        tabBarStyle={{
+          marginBottom: 0,
+          fontSize: "1rem",
+          fontWeight: "500",
+          color: "#8E8E8E",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+        className="tabs-container"
+      >
+        <TabPane tab={<span className="tab-span">Today</span>} key="today" />
+        <TabPane tab={<span className="tab-span">This Week</span>} key="week" />
+        <TabPane tab={<span className="tab-span">This Month</span>} key="month" />
+        <TabPane tab={<span className="tab-span">This Year</span>} key="year" />
+      </Tabs>
+    </Card>
   );
 };
 
