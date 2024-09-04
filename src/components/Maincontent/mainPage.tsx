@@ -1,11 +1,7 @@
 
-
-
 import PieChartCircle from "./PieChartCircle";
 import ProgressBar from "./ProgressBar";
-
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import { Row, Col, Card, Tabs } from "antd";
 import { useGetChartDataQuery } from "../../Services/ChartApi";
