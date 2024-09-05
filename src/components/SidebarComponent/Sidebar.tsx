@@ -9,13 +9,14 @@ import {
   BuildOutlined,
   BookOutlined
 } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
 
 
 const { Sider } = Layout;
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const menuItems  = [
+  const menuItems:MenuProps['items']  = [
     {
       key: '1',
       icon: <BookOutlined/>,
