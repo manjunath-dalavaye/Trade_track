@@ -36,14 +36,17 @@ export default function App() {
         <Col span={6}>
         <div style={{ width:"23.1875rem",height:"9.5rem", marginTop:"1.56rem"}}>Chart Component</div>
         <div style={{ width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Chart Component</div>
-
+       
         </Col>
        </Row>
        <Row>
         <Col span={18}>
       <PortfolioTable />
         </Col>
-        
+        <Col span={6}>
+        <div style={{ backgroundColor:"blue", width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Charttttt Component</div>
+        <div style={{ backgroundColor:"blue", width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Chartttttt Component</div>
+        </Col>
         <Col>
         </Col>
        </Row>
