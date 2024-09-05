@@ -1,6 +1,7 @@
 import { Table } from 'antd';
 import './Table.scss';  
 import { useGetDataQuery } from '../../Services/Api';
+import { Bitcoin,Monero,Somecoin,Cardano,ChianLink,Coin,Etherum } from '../../icons/Icons';
 
 
 interface TableData {
@@ -15,8 +16,19 @@ interface TableData {
     today: string;
 }
 
+
 const PortfolioTable = () => {
     const { data, isError, isLoading, isSuccess } = useGetDataQuery();
+    const iconMap: { [key: string]: JSX.Element } = {
+        'Bitcoin': <Bitcoin />,
+        'Monero': <Monero />,
+        'Somecoin': <Somecoin />,
+        'Cardano': <Cardano />,
+        'ChianLink': <ChianLink />,
+        'Coin':<Coin />,
+        'Ethereum': <Etherum />,
+       
+    };
 
   
     const tableData: TableData[] | undefined = data?.map((item, index) => ({
@@ -37,10 +49,14 @@ const PortfolioTable = () => {
             dataIndex: 'name',
             key: 'name',
             render: (text: string) => (
-                <div className="coin-name">
-                    <img src={`path/to/${text.toLowerCase()}.svg`} alt={text} className="coin-icon" />
+                <div className='IconWithText'>
+                  {
+                    iconMap[text] || <Bitcoin />
+                  }
                     <span>{text}</span>
+           
                 </div>
+                
             ),
         },
         {
