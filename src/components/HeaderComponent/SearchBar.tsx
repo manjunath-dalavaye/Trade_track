@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AutoComplete, Flex, Input } from 'antd';
+import { AutoComplete, Input } from 'antd';
 import type { AutoCompleteProps } from 'antd';
 
 const predefinedOptions = [
@@ -24,27 +24,25 @@ const SearchBar: React.FC = () => {
   };
 
   return (
-    <Flex vertical gap={12}>
+    <div>
       <AutoComplete
         options={options}
         style={{ width: 200, border: 'none' }} 
-        onSearch={filterOptions}  
+        onSearch={filterOptions}
         onSelect={globalThis.console.log}
-        dropdownStyle={{ fontSize: '18px' }} 
+        dropdownStyle={{ fontSize: '1.135rem' }} 
       >
-        
-        <Input 
-          placeholder="Stocks" 
-          style={{ 
-            fontSize: '18px', 
-            border: 'none', 
-            backgroundColor: 'transparent' 
-          }} 
+        <Input
+          placeholder="Stocks"
+          style={{
+            fontSize: '1.135rem',  
+            border: 'none',
+            backgroundColor: 'transparent'
+          }}
         />
       </AutoComplete>
-    </Flex>
+    </div>
   );
 };
 
 export default SearchBar;
-
