@@ -1,14 +1,15 @@
 import { Layout } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
-import "./styles/global.scss";
-import MainPage from "./components/Maincontent/mainPage";
+import './styles/global.scss'
+
 import TableComponent from "./components/TableComponent/TableComponent";
-import NewsSection from "./components/NewsSectionComponent/NewsSection";
-import NftSection from "./components/NFTComponent/NFT";
-import StackSection from "./components/StackComponent/StackSection";
-import Wallet from "./components/WalletComponent/Wallet";
-import { Route, Routes } from "react-router-dom";
+import MainPage from "./components/Maincontent/mainPage";
+// import NewsSection from "./components/NewsSectionComponent/NewsSection";
+// import NftSection from "./components/NFTComponent/NFT";
+// import StackSection from "./components/StackComponent/StackSection";
+// import Wallet from "./components/WalletComponent/Wallet";
+// import { Route, Routes } from "react-router-dom";
 
 
 
@@ -20,17 +21,14 @@ export default function App() {
       </Layout.Sider>
 
       <Layout>
-        <Layout.Header style={{ background: "#fff", padding: 0 }}>
-          <Header />
-        </Layout.Header>
-        <Routes>
-          <Route path="/News" element={<NewsSection />} />
-          <Route path="/NFT" element={<NftSection />} />
-          <Route path="/Stack" element={<StackSection />} />
-          <Route path="/Wallet" element={<Wallet />} />
-        </Routes>
-        <MainPage />
-        
+       <Layout.Header style={{background: "#FFF",padding:0}}>
+       <Header />
+      
+       </Layout.Header>
+       <MainPage />
+         
+       {/* <TableComponent /> */}
+     
       </Layout>
     </Layout>
   );

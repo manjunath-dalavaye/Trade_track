@@ -1,15 +1,26 @@
 .progress-card {
-  width: 18.75rem;
+  width: 23.1875rem;
+  height: 11.5rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: #FFF;
+}
+
+.progress-bar-margin {
+  margin-bottom: 1.87rem;
 }
 
 .progress-info {
   display: flex;
+  width: 12.375rem;
+  height: 4.25rem;
   flex-direction: column;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .progress-title {
-  color: #9FA2B2;
+  color: var(--Labels, #9FA2B2);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
   font-size: 1.125rem;
@@ -19,14 +30,17 @@
 }
 
 .expand-limit-button {
-  color: #453DE0;
+  color: var(--Crypto-purple, #453DE0);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
-  font-size: 1.209rem;
+  font-size: 1.20969rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .progress-circle {
@@ -38,7 +52,10 @@
 .circle-container {
   width: 7.5625rem;
   height: 7.5625rem;
-  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .progress-format {

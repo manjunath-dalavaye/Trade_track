@@ -1,0 +1,35 @@
+.ant-table {
+  width: 62.625rem;
+  height: 30.875rem;
+  flex-shrink: 0;
+}
+
+.portfolio-table-container {
+  margin-top: 1.25rem;
+  border-radius: 0.375rem;
+  background: #FFF;
+  padding: 1rem;
+  overflow: hidden;
+}
+.portfolio-table-container .coin-name {
+  display: flex;
+  align-items: center;
+}
+.portfolio-table-container .coin-name .coin-icon {
+  margin-right: 0.5rem;
+}
+.portfolio-table-container .ant-table {
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+.portfolio-table-container .ant-table .ant-table-thead > tr > th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-align: center;
+}
+.portfolio-table-container .ant-table .ant-table-tbody > tr > td {
+  text-align: center;
+}
+.portfolio-table-container .ant-table .ant-table-tbody > tr:hover > td {
+  background-color: #fafafa;
+}/*# sourceMappingURL=Table.css.map */

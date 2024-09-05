@@ -26,16 +26,16 @@ interface TimeSeriesData {
 }
 
 const MainPage: React.FC = () => {
-  const [activeKey, setActiveKey] = useState("today");
-  const [data, setData] = useState<any>({});
+  // const [activeKey, setActiveKey] = useState("today");
+  // const [data, setData] = useState<any>({});
 
   // Fetch data from db.json
-  useEffect(() => {
-    fetch("/db.json")
-      .then((response) => response.json())
-      .then((data) => setData(data.data)) // Adjust if your JSON structure is different
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/db.json")
+  //     .then((response) => response.json())
+  //     .then((data) => setData(data.data)) // Adjust if your JSON structure is different
+  //     .catch((error) => console.error("Error fetching data:", error));
+  // }, []);
   const [activeKey, setActiveKey] = useState<string>("today");
   const { data, isError, isLoading, isSuccess } = useGetChartDataQuery();
 
@@ -59,8 +59,6 @@ const MainPage: React.FC = () => {
   return (
     <Row gutter={18} style={{ marginTop: 10, padding: 10 }}>
       <Col span={10}>
-    <Row gutter={16} style={{ marginTop: 5, padding: 5 }}>
-      <Col span={8}>
         <Card title="Your Balance">
           <ResponsiveContainer width="100%" height={150}>
             <LineChart data={data[activeKey]}>
@@ -116,7 +114,7 @@ const MainPage: React.FC = () => {
       <Col span={8}>
         <PieChartCircle />
       </Col>
-      <Col span={4}>
+      <Col span={6}>
         <ProgressBar/>
       </Col>
     </Row>
