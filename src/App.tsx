@@ -27,10 +27,6 @@ export default function App() {
        <Row gutter={0}>
         <Col span={10}>
           <MainPage />
-       
-
-          <MainPage />
-      
         </Col>
         <Col span={8}>
        

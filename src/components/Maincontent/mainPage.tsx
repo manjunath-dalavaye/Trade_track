@@ -82,8 +82,10 @@ const MainPage: React.FC = () => {
       </Tabs>
     </Card>
     </div>
-    
+    </Tabs>
+    </Card>
     </div>
+  
    
   );
 };
