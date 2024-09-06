@@ -1,8 +1,20 @@
-html{
-  font-size: calc(0.8vw+0.02rem);
+
+#root {
+  --base-font-size: 16px;
 }
 
-body{
-  width: 100vw;
-  height: 100vh;
+html {
+  font-size: 11px; 
 }
+
+
+
+
+
+
+body {
+  font-size: 1rem;
+  width: 100vw;
+   height: 100vh;
+}
+

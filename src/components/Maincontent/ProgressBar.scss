@@ -67,48 +67,41 @@
 //   }
   
 .progress-card {
-  width: 23.1875rem; // 371px
-  height: 11.5rem; // 184px
+  width: 25rem;  // Reduced width
+  height: 11.5rem; // Reduced height
   flex-shrink: 0;
   border-radius: 0.75rem;
   background: #FFF;
-}
-
-.progress-bar-margin {
-  margin-bottom: 1.87rem; // Space between ProgressBar and PieChart
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top:1.56rem;
+  margin-bottom: 1.3rem;
 }
 
 .progress-info {
   display: flex;
-  width: 12.375rem; // 198px
-  height: 4.25rem; // 68px
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .progress-title {
-  color: var(--Labels, #9FA2B2);
+  color: #9FA2B2;
   font-feature-settings: 'liga' off, 'clig' off;
-  font-family: "DM Sans";
-  font-size: 1.125rem; // 18px
+  font-family: 'DM Sans';
+  font-size: 1.125rem; // Font size for the title
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .expand-limit-button {
-  color: var(--Crypto-purple, #453DE0);
+  color: #453DE0;
   font-feature-settings: 'liga' off, 'clig' off;
-  font-family: "DM Sans";
-  font-size: 1.20969rem; // 19.355px
+  font-family: 'DM Sans';
+  font-size: 1.25rem; // Font size for the button
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 0;
-  border: none; // remove default button border
-  background: none; // remove default button background
-  cursor: pointer; // add pointer cursor
 }
 
 .progress-circle {
@@ -118,16 +111,13 @@
 }
 
 .circle-container {
-  width: 7.5625rem; // 121px
-  height: 7.5625rem; // 121px
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 8rem; // circle width
+  height: 8rem; //  circle height
+  position: relative;
 }
 
 .progress-format {
-  font-size: 0.75rem; // 12px
+  font-size: 0.8rem; // Font size for progress format
   text-align: center;
 }
 
@@ -135,23 +125,18 @@
   color: #4C506B;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'DM Sans';
-  font-size: 1.548rem; // 24.763px
+  font-size: 1.548rem; // Font size for progress percentage
   font-style: normal;
   font-weight: 700;
-  line-height: 1.45; // 23.574px / 16px
+  line-height: 1.45;
 }
 
 .progress-label {
   color: #9FA2B2;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'DM Sans';
-  font-size: 0.844rem; // 13.507px
+  font-size: 0.9rem; // Font size for progress label
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-
-
-
-

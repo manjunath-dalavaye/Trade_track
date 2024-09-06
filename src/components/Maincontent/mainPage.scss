@@ -1,39 +1,41 @@
-.card-title {
-    margin-top: 0.4375rem;
-  
-    span {
-      color: var(--Text, #4C506B);
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: "DM Sans";
-      margin-top: 12.5rem;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  
-    strong {
-      font-size: 2.75rem;
-    }
+.container {
+    width: 36.375rem;
+    margin-top: 1.56rem;
+    margin-left: 3.44rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.3rem;
   }
   
-  .tab-span {
-    color: var(--Text, #4C506B);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "DM Sans";
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  .balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .text{
+    font-size: 0.875rem;
+    color: #666;
   }
   
-  .card-container {
-    width: 100%;
-    max-width: 37.5rem;
-    height: 25rem;
-  }
-  
-  .tabs-container {
-    margin-bottom: 0;
-  }
-  
+.container {
+  width: 36.375rem;
+  margin-top: 1.56rem;
+  margin-left: 3.44rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: #FFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.3rem;
+}
+
+.balance {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.text{
+  font-size: 0.875rem;
+  color: #666;
+}

@@ -9,55 +9,55 @@ import {
   BuildOutlined,
   BookOutlined
 } from '@ant-design/icons';
-// import { position } from '@chakra-ui/react';
+import type { MenuProps } from 'antd';
 
 
 const { Sider } = Layout;
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const menuItems  = [
+  const menuItems:MenuProps['items']  = [
     {
       key: '1',
       icon: <BookOutlined/>,
       label: 'News',
-      style: { marginTop: '70px', height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: { marginTop: '4.13rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '2',
       icon: <AppstoreOutlined />,
       label: 'NFT',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: {marginTop: '1.87rem',  height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '3',
       icon: <BuildOutlined />,
       label: 'Stacking',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: {marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '4',
       icon: <WalletOutlined />,
       label: 'Wallets',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: {marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff', },
     },
     {
       key: '5',
       icon: <SecurityScanOutlined />,
       label: 'Security',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: { marginTop: '1.87rem',height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '6',
       icon: <SettingOutlined />,
       label: 'Settings',
-      style: { height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff' },
+      style: {marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '7',
       icon: <CloudOutlined />,
       label: 'Cloud money',
-      style: { position:'absolute', height: '50px', lineHeight: '50px', background: 'transparent', color: '#fff', bottom:'0px' },
+      style: { position:'absolute', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff', bottom:'0px' },
     },
   ];
 
