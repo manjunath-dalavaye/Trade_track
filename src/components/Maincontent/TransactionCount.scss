@@ -1,10 +1,14 @@
 .transaction-count-card {
-    width: 25rem; 
-    height: 10rem; 
-    flex-shrink: 0; /* Prevent shrinking */
-    border-radius: 0.75rem; /* Rounded corners */
-    background: #fff; /* Background color */
-    padding: 1rem; /* 16px to rem */
+  
+    width: 23.1875rem; // Set the width of the card
+    height: 9.25rem; // Set the height of the card
+    flex-shrink: 0; // Prevent the card from shrinking
+    border-radius: 0.75rem; // Rounded corners
+    background: #FFF; // Background color
+    padding: 1rem; // Optional: Add padding if needed
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add shadow for better visual
+    margin-top: 1.38rem;
+    margin-left: 1.88rem;
     border: none;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px to rem */
     position: relative;

@@ -67,14 +67,13 @@
 //   }
   
 .progress-card {
-  width: 25rem;  // Reduced width
-  height: 11.5rem; // Reduced height
-  flex-shrink: 0;
-  border-radius: 0.75rem;
-  background: #FFF;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top:1.56rem;
-  margin-bottom: 1.3rem;
+  width: 23.1875rem; // Set the width of the card
+  height: 11.5rem; // Set the height of the card
+  flex-shrink: 0; // Prevent the card from shrinking
+  border-radius: 0.75rem; // Rounded corners
+  background: #FFF; // Background color
+ margin-top: 2.56rem;
+ margin-left: 1.88rem;
 }
 
 .progress-info {
