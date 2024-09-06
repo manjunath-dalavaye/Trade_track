@@ -1,5 +1,5 @@
+import React, { PureComponent } from "react";
 import { Card } from "antd";
-import { PureComponent } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 
 interface RenderActiveShapeProps {
@@ -103,7 +103,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
         y={ey}
         textAnchor={textAnchor}
         fill="#333"
-        fontSize="1rem" //font size for value
+        fontSize="1rem" // Font size for value
       >{`Value ${value}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 10}
@@ -111,7 +111,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
         dy={14}
         textAnchor={textAnchor}
         fill="#999"
-        fontSize="0.8rem" //font size for percentage
+        fontSize="0.8rem" // Font size for percentage
       >
         {`(Rate ${(percent * 100).toFixed(2)}%)`}
       </text>
@@ -134,29 +134,30 @@ export default class PieChartCircle extends PureComponent {
     return (
       <Card
         style={{
-          width: "29.375rem",
-          height: "18.3rem", //card height
+          width: "40.375rem",
+          height: "21.625rem", 
           flexShrink: 0,
           borderRadius: "0.75rem",
           background: "#FFF",
-          marginTop: "1.56rem",
+          marginTop: "2.56rem",
+          marginLeft:"1.87rem",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <ResponsiveContainer width="100%" height={200}>
-          <PieChart width={400} height={400}>
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
             <Pie
               activeIndex={this.state.activeIndex}
               activeShape={renderActiveShape}
               data={data}
               cx="50%"
               cy="50%"
-              innerRadius={50}
-              outerRadius={68}
+              innerRadius={60}
+              outerRadius={78}
               fill="#8884d8"
               dataKey="value"
               onMouseEnter={this.onPieEnter}
-              paddingAngle={5} // Add space between slices
+              paddingAngle={5} 
               labelLine={false}
               cornerRadius={8}
             >
