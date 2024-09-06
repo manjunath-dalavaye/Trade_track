@@ -4,16 +4,17 @@ import Header from "./components/HeaderComponent/Header";
 import "./styles/global.scss";
 import MainPage from "./components/Maincontent/mainPage";
 
-import NewsSection from "./components/NewsSectionComponent/NewsSection";
-import NftSection from "./components/NFTComponent/NFT";
-import StackSection from "./components/StackComponent/StackSection";
-import Wallet from "./components/WalletComponent/Wallet";
-import { Route, Routes } from "react-router-dom";
-import "./App.css"
-import Dashboard from "./components/Dashboard/Dashboard";
+// import NewsSection from "./components/NewsSectionComponent/NewsSection";
+// import NftSection from "./components/NFTComponent/NFT";
+// import StackSection from "./components/StackComponent/StackSection";
+// import Wallet from "./components/WalletComponent/Wallet";
+// import { Route, Routes } from "react-router-dom";
+import "./App.css";
+// import Dashboard from "./components/Dashboard/Dashboard";
 import PortfolioTable from "./components/TableComponent/TableComponent";
-
-
+import PieChartCircle from "./components/Maincontent/PieChartCircle";
+import ProgressBar from "./components/Maincontent/ProgressBar";
+import TransactionCount from "./components/Maincontent/TransactionCount";
 
 export default function App() {
   return (
@@ -23,47 +24,35 @@ export default function App() {
       </Layout.Sider>
 
       <Layout>
-       <Header />
-       <Row gutter={0}>
-        <Col span={10}>
-          <MainPage />
-        </Col>
-        <Col span={8}>
-       
-        <div style={{ width:"24.375rem",height:"18.625rem", marginTop:"1.56rem"}}>Chart Component</div>
+        <Header />
+        <Row>
+          <Col span={10}>
+            <MainPage />
+          </Col>
+          <Col span={8}>
+            <PieChartCircle />
+          </Col>
+          <Col span={6}>
+            <ProgressBar />
 
-        </Col>
-        <Col span={6}>
-        <div style={{ width:"23.1875rem",height:"9.5rem", marginTop:"1.56rem"}}>Chart Component</div>
-        <div style={{ width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Chart Component</div>
-       
-        </Col>
-       </Row>
-       <Row>
-        <Col span={18}>
-      <PortfolioTable />
-        </Col>
-        <Col span={6}>
-        <div style={{ backgroundColor:"blue", width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Charttttt Component</div>
-        <div style={{ backgroundColor:"blue", width:"23.1875rem",height:"7.25rem",marginTop:"1.37rem"}}>Chartttttt Component</div>
-        </Col>
-        <Col>
-        </Col>
-       </Row>
+            <TransactionCount />
+          </Col>
+        </Row>
+        <Row>
+          <Col span={18}>
+            <PortfolioTable />
+          </Col>
+        </Row>
       </Layout>
     </Layout>
   );
 }
 
-
-       {/* <Routes>
+{
+  /* <Routes>
           <Route path="/News" element={<NewsSection />} />
           <Route path="/NFT" element={<NftSection />} />
           <Route path="/Stack" element ={<StackSection />} />
           <Route path="/Wallet" element ={<Wallet />} />
-        </Routes> */}
-
-
-
-
-        
+        </Routes> */
+}

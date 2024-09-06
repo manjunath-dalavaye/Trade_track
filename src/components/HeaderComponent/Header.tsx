@@ -1,5 +1,6 @@
 import React from "react";
-import {  Button,Layout } from "antd";
+import {  Button  } from "antd";
+import {  Layout  } from "antd";
 import styles from "./Header.module.scss";
 import SearchBar from './SearchBar'; 
 import ProfileDropdown from "./Profile";
