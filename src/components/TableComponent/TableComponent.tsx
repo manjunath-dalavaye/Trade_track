@@ -130,7 +130,7 @@ const PortfolioTable = () => {
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
-      }}><h3>Error While Teching Data</h3></div>;
+      }}><h3>Error While Fetching Data</h3></div>;
   } else {
     return (
       <div className="portfolio-table-container">
