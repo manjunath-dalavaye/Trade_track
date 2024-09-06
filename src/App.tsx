@@ -41,7 +41,7 @@ export default function App() {
             <TransactionCount />
           </div>
         </div>
-        <div style={{ marginTop: "2.62rem",marginLeft:"1rem" }}>
+        <div style={{ marginTop: "2.62rem" }}>
           <PortfolioTable />
         </div>
         <div style={{ 
