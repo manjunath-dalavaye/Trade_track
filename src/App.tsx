@@ -25,14 +25,14 @@ export default function App() {
         background: '#f8f9fd', 
         overflowX: 'hidden',  // Prevent horizontal overflow in the main content
         boxSizing: 'border-box',  // Ensure padding doesn't affect total width
-          // Add some padding to avoid content touching the edge
+   // Add some padding to avoid content touching the edge
       }}>
         <Header />
         <div style={{ 
           display: 'flex', 
            // Distribute the elements properly
           flexWrap: 'wrap',  // Ensure responsive behavior if the screen is smaller
-           // Some padding for breathing space
+         // Some padding for breathing space
         }}>
           <MainPage />
           <PieChartCircle />

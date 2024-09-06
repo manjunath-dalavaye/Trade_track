@@ -9,13 +9,14 @@ const ProgressBar: React.FC = () => {
     setProgress((prevProgress) => Math.min(prevProgress + 5, 100));
   };
   console.log("Progress updated:", progress);
+
   return (
-    <Card className="progress-card">
+    <Card className="progress-card progress-bar-margin">
       <Row align="middle" gutter={16}>
         <Col span={16} className="progress-info">
           <div>
             <h3 className="progress-title">
-              You have reached {progress}% of your deposit of $10,000
+              You have reached {progress}% of your daily deposit of $10,000
             </h3>
             <Button
               type="link"
@@ -31,7 +32,7 @@ const ProgressBar: React.FC = () => {
             <Progress
               type="circle"
               percent={progress}
-              width={90}
+              size={85} // match the container width
               strokeColor="var(--Crypto-purple, #453DE0)"
               format={() => (
                 <div className="progress-format">
@@ -48,4 +49,3 @@ const ProgressBar: React.FC = () => {
 };
 
 export default ProgressBar;
-

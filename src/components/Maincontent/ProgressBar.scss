@@ -1,11 +1,11 @@
 .progress-card {
-  width: 23.1875rem; // Set the width of the card
-  height: 11.5rem; // Set the height of the card
-  flex-shrink: 0; // Prevent the card from shrinking
-  border-radius: 0.75rem; // Rounded corners
-  background: #FFF; // Background color
- margin-top: 2.56rem;
- margin-left: 1.88rem;
+  width: 23.1875rem; // Card width remains the same
+  height: 11.5rem; // Card height remains the same
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: #FFF;
+  margin-top: 2.56rem;
+  margin-left: 1.88rem;
 }
 
 .progress-info {
@@ -41,14 +41,8 @@
   justify-content: center;
 }
 
-.circle-container {
-  width: 8rem; // circle width
-  height: 8rem; //  circle height
-  position: relative;
-}
-
 .progress-format {
-  font-size: 0.8rem; // Font size for progress format
+  font-size: 0.8rem; // Font size for progress format remains unchanged
   text-align: center;
 }
 
@@ -56,7 +50,7 @@
   color: #4C506B;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'DM Sans';
-  font-size: 1.548rem; // Font size for progress percentage
+  font-size: 1.548rem; // Font size for progress percentage remains unchanged
   font-style: normal;
   font-weight: 700;
   line-height: 1.45;
@@ -66,7 +60,7 @@
   color: #9FA2B2;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'DM Sans';
-  font-size: 0.9rem; // Font size for progress label
+  font-size: 0.9rem; // Font size for progress label remains unchanged
   font-style: normal;
   font-weight: 400;
   line-height: normal;

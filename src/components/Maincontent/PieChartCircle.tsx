@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import { Card } from "antd";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 
@@ -70,7 +70,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
         dy={8}
         textAnchor="middle"
         fill={fill}
-        fontSize={16}
+        fontSize={10}
       >
         {payload.name}
       </text>
@@ -88,8 +88,8 @@ const renderActiveShape = (props: unknown): JSX.Element => {
         cy={cy}
         startAngle={startAngle}
         endAngle={endAngle}
-        innerRadius={outerRadius + 6}
-        outerRadius={outerRadius + 10}
+        innerRadius={outerRadius + 4}
+        outerRadius={outerRadius + 8}
         fill={fill}
       />
       <path
@@ -103,7 +103,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
         y={ey}
         textAnchor={textAnchor}
         fill="#333"
-        fontSize="1rem" // Font size for value
+        fontSize="1rem"
       >{`Value ${value}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 10}
@@ -111,7 +111,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
         dy={14}
         textAnchor={textAnchor}
         fill="#999"
-        fontSize="0.8rem" // Font size for percentage
+        fontSize="0.5rem"
       >
         {`(Rate ${(percent * 100).toFixed(2)}%)`}
       </text>
@@ -134,38 +134,35 @@ export default class PieChartCircle extends PureComponent {
     return (
       <Card
         style={{
-          width: "28.375rem",
-          height: "21.625rem", 
+          width: "40.375rem",
+          height: "21.625rem",
           flexShrink: 0,
           borderRadius: "0.75rem",
           background: "#FFF",
           marginTop: "2.56rem",
-          marginLeft:"1.87rem",
+          marginLeft: "1.87rem",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height={180}>
           <PieChart>
             <Pie
               activeIndex={this.state.activeIndex}
               activeShape={renderActiveShape}
               data={data}
-              cx="50%"
-              cy="50%"
-              innerRadius={60}
-              outerRadius={78}
+              cx="50%" // Centered horizontally
+              cy="50%" // Centered vertically
+              innerRadius={40} // Increased for visibility
+              outerRadius={60} // Increased for visibility
               fill="#8884d8"
               dataKey="value"
               onMouseEnter={this.onPieEnter}
-              paddingAngle={5} 
+              paddingAngle={5}
               labelLine={false}
-              cornerRadius={8}
+              cornerRadius={6}
             >
               {data.map((_entry, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={COLORS[index % COLORS.length]}
-                />
+                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>
           </PieChart>
