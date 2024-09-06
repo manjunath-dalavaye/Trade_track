@@ -134,7 +134,7 @@ export default class PieChartCircle extends PureComponent {
     return (
       <Card
         style={{
-          width: "28.375rem",
+          width: "40.375rem",
           height: "21.625rem", 
           flexShrink: 0,
           borderRadius: "0.75rem",
@@ -159,6 +159,7 @@ export default class PieChartCircle extends PureComponent {
               onMouseEnter={this.onPieEnter}
               paddingAngle={5} 
               labelLine={false}
+              
               cornerRadius={8}
             >
               {data.map((_entry, index) => (
