@@ -1,0 +1,70 @@
+
+
+@import '../../styles/global.scss';
+
+
+
+.news-card {
+  width: 25rem;
+  height: 16.4375rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-top: 1rem;
+
+  .ant-card-cover {
+    position: relative;
+    height: 9.875rem; 
+    overflow: hidden;
+  }
+
+  .main-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+
+  .ant-card-body {
+    padding: 0rem 1rem;
+  }
+
+  .content {
+    margin: 0.5rem 0rem;
+
+    .headline {
+      font-size: 1.2rem;
+      color: $ternary-text-color; 
+      line-height: 1;
+      float: left;
+    }
+
+    .date {
+      font-size: 0.75rem;
+      display: block;
+      color: $primary-color; 
+      margin-top: 0rem;
+      line-height: 1;
+      float: left;
+      clear: left;
+      margin-left: 0.1875rem;
+    }
+
+    .summary {
+      font-size: 1rem;
+      color: $primary-color; 
+      margin-top: 0.7rem;
+      line-height: 1.05;
+      float: left;
+      clear: left;
+      font-family: $primary-font; 
+    }
+
+    
+  }
+}
+
+
+.show-all-news .ant-btn {
+  color: $primary-color; 
+  border: none;
+  margin-left:2.9rem;
+}

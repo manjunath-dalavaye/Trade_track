@@ -4,15 +4,18 @@ import Header from "./components/HeaderComponent/Header";
 import "./styles/global.scss";
 import MainPage from "./components/Maincontent/mainPage";
 
-import NewsSection from "./components/NewsSectionComponent/NewsSection";
-import NftSection from "./components/NFTComponent/NFT";
-import StackSection from "./components/StackComponent/StackSection";
-import Wallet from "./components/WalletComponent/Wallet";
-import { Route, Routes } from "react-router-dom";
+// import NewsSection from "./components/NewsSectionComponent/NewsSection";
+// import NftSection from "./components/NFTComponent/NFT";
+// import StackSection from "./components/StackComponent/StackSection";
+// import Wallet from "./components/WalletComponent/Wallet";
+// import { Route, Routes } from "react-router-dom";
 import "./App.css"
-import Dashboard from "./components/Dashboard/Dashboard";
+// import Dashboard from "./components/Dashboard/Dashboard";
 import PortfolioTable from "./components/TableComponent/TableComponent";
-
+// import CombinedCard from "./components/Maincontent/CombineCard";
+import CryptoCard from "./components/Maincontent/CryptoCard";
+import Stacking from "./components/Maincontent/Stacking";
+import NewsCard from "./components/Maincontent/NewsCard";
 
 
 export default function App() {
@@ -40,6 +43,15 @@ export default function App() {
         <Col span={18}>
       <PortfolioTable />
         </Col>
+        <Col span={6}>
+           <CryptoCard/>
+           <Stacking />
+            
+           <NewsCard/>
+        </Col>
+        
+                                                           
+        
        </Row>
       </Layout>
     </Layout>
@@ -56,5 +68,5 @@ export default function App() {
 
 
 
-
+                                                         
         

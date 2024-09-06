@@ -1,0 +1,96 @@
+
+
+
+
+@import '../../styles/global.scss';
+
+
+
+
+.crypto-card-wrapper {
+  width: 25rem;
+  height: 11.5rem;
+  display: flex;
+  flex-direction: column; 
+}
+
+.crypto-card {
+  .crypto-card-content {
+    padding: 0;
+  }
+
+  .crypto-card-title {
+    color: $ternary-text-color;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: $primary-font;
+    font-size: 1.20969rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 5.2rem;
+  }
+
+  .crypto-card-avg {
+    color: $primary-color;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: $primary-font;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .crypto-card-avg1 {
+    color: $ternary-text-color;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .crypto-card-date {
+    color: $primary-color;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 9rem;
+  }
+
+  .crypto-card-amount {
+    color: $ternary-text-color;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0;
+
+    .crypto-card-shib {
+      color: $primary-color;
+      margin-left: 0.2rem;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center; 
+  padding: 0.3rem;
+}
+
+.show-all {
+  color: $primary-color;
+}
+
+.show-all .ant-btn {
+  color: $primary-color;
+  border: none; 
+}

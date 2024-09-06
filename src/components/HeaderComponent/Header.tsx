@@ -56,9 +56,7 @@ const Header: React.FC = () => {
           >
           <ProfileDropdown/>           
           </Button>
-          {/* <img src="/src/assets/ellipse-54.svg"  style={{width:20, height:20}}/> */}
-         
-          <img src="/src/assets/ellipse-54.svg"  style={{width:20, height:20}}/>
+
         </div>
       </div>
     </AntHeader>
