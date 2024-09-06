@@ -21,43 +21,43 @@ const Sidebar = () => {
       key: '1',
       icon: <BookOutlined/>,
       label: 'News',
-      style: { marginTop: '4.13rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
+      style: { fontSize:"1.63636rem", marginTop: '4.13rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '2',
       icon: <AppstoreOutlined />,
       label: 'NFT',
-      style: {marginTop: '1.87rem',  height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
+      style: {fontSize:"1.63636rem", marginTop: '4.18rem',  height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '3',
       icon: <BuildOutlined />,
       label: 'Stacking',
-      style: {marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
+      style: { fontSize:"1.63636rem",marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '4',
       icon: <WalletOutlined />,
       label: 'Wallets',
-      style: {marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff', },
+      style: {fontSize:"1.63636rem", marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff', },
     },
     {
       key: '5',
       icon: <SecurityScanOutlined />,
       label: 'Security',
-      style: { marginTop: '1.87rem',height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
+      style: {fontSize:"1.63636rem", marginTop: '1.87rem',height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '6',
       icon: <SettingOutlined />,
       label: 'Settings',
-      style: {marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
+      style: {fontSize:"1.63636rem", marginTop: '1.87rem', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff' },
     },
     {
       key: '7',
       icon: <CloudOutlined />,
       label: 'Cloud money',
-      style: { position:'absolute', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff', bottom:'0px' },
+      style: {fontSize:"1.63636rem",position:'absolute', height: '1.4375rem', lineHeight: '1.4375rem', background: 'transparent', color: '#fff', bottom:'0px' },
     },
   ];
 
@@ -88,7 +88,7 @@ const Sidebar = () => {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider
-        width={225}
+        width=" 20.45455rem"
         style={{
           backgroundColor: '#4c4fff',
           position: 'relative',
