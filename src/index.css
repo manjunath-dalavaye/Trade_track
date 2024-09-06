@@ -1,6 +1,14 @@
 
 html {
-  font-size: 10px; 
+
+  /* overflow-y: hidden; */
+  font-size: 10px;
+  
+  
+}
+body{
+  width: 100vw;
+  height: 100vh;
 }
 
 
