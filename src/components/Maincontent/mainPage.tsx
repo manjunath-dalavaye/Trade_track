@@ -48,12 +48,17 @@ const MainPage: React.FC = () => {
             />
           </LineChart>
         </ResponsiveContainer>
-        <Tabs defaultActiveKey="today" onChange={(key) => setActiveKey(key)}>
-          <TabPane tab="Today" key="today" />
-          <TabPane tab="This Week" key="week" />
-          <TabPane tab="This Month" key="month" />
-          <TabPane tab="This Year" key="year" />
-        </Tabs>
+        <Tabs
+  defaultActiveKey="today"
+  onChange={(key) => setActiveKey(key)}
+  className="full-width-tabs" // Add class for full width
+>
+  <TabPane tab="Today" key="today" />
+  <TabPane tab="This Week" key="week" />
+  <TabPane tab="This Month" key="month" />
+  <TabPane tab="This Year" key="year" />
+</Tabs>
+
       </Card>
     </div>
   );

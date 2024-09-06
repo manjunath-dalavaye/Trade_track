@@ -134,7 +134,7 @@ export default class PieChartCircle extends PureComponent {
     return (
       <Card
         style={{
-          width: "40.375rem",
+          width: "28.375rem",
           height: "21.625rem", 
           flexShrink: 0,
           borderRadius: "0.75rem",
