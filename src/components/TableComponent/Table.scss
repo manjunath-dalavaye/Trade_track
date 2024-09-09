@@ -1,77 +1,45 @@
 .portfolio-table-container {
-  width: 102.425rem;
+  width: 100.625rem;
   height: 30.875rem;
   flex-shrink: 0;
-  
+  margin-left: 3.54rem;
   border-radius: 0.375rem;
   background: #FFF;
-    margin-left: 3.54rem;
-    border-radius: 0.375rem;
-    background: #FFF;
-  
-    .ant-table-thead > tr > th {
-  
-  border-radius: 0.375rem;
-  background: #FFF;
-    margin-left: 3.54rem;
-    border-radius: 0.375rem;
-    background: #FFF;
-  
-    .ant-table-thead > tr > th {
-      color: var(--Label, #A9ACBB);
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: "DM Sans", sans-serif;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-  
-    .ant-table-tbody > tr > td {
-    }
-  
-    .ant-table-tbody > tr > td {
-      color: var(--Text, #4C506B);
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: "DM Sans", sans-serif;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  
-    .IconWithText {
-      display: flex;
-      align-items: center; 
-      gap: 0.75rem; 
-    }
-  
-    .IconWithText svg {
-      width: 1.5rem; 
-      height: 1.5rem;
-    }
-  
-    .custom-line {
-    }
-  
-    .IconWithText {
-      display: flex;
-      align-items: center; 
-      gap: 0.75rem; 
-    }
-  
-    .IconWithText svg {
-      width: 1.5rem; 
-      height: 1.5rem;
-    }
-  
-    .custom-line {
-      width: 62.6875rem;
-      height: 0.0125rem;
-      background: #A9ACBB;
-    }
+
+  .ant-table-thead > tr > th {
+    color: var(--Label, #A9ACBB);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-  
-    }
-  
-  
+
+  .ant-table-tbody > tr > td {
+    color: var(--Text, #4C506B);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .IconWithText {
+    display: flex;
+    align-items: center; 
+    gap: 0.75rem; 
+  }
+
+  .IconWithText svg {
+    width: 1.5rem; 
+    height: 1.5rem;
+  }
+
+  .custom-line {
+    width: 62.6875rem;
+    height: 0.0125rem;
+    background: #A9ACBB;
+  }
+}
