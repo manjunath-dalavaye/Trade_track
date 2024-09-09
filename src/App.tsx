@@ -7,6 +7,9 @@ import PortfolioTable from "./components/TableComponent/TableComponent";
 import PieChartCircle from "./components/Maincontent/PieChartCircle";
 import ProgressBar from "./components/Maincontent/ProgressBar";
 import TransactionCount from "./components/Maincontent/TransactionCount";
+import CryptoCard from "./components/Maincontent/CryptoCard";
+import Stacking from "./components/Maincontent/Stacking";
+import NewsCard from "./components/Maincontent/NewsCard";
 
 
 
@@ -42,18 +45,25 @@ export default function App() {
             <ProgressBar />
             <TransactionCount />
           </div>
-        </div>
-        <div style={{ marginTop: "2.62rem" }}>
-          <PortfolioTable />
+        
         </div>
         <div style={{ 
           display: 'flex', 
-          justifyContent: 'space-between', 
-          padding: '20px' 
+          marginTop: "2.62rem", 
+          marginLeft:"1rem", 
         }}>
-          {/* <StackingCard />
-          <NewsCard /> */}
+          <PortfolioTable />
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            // Some space between the table and the cards
+          }}>
+            <CryptoCard /> 
+            <Stacking />
+            <NewsCard/>
+          </div>
         </div>
+        
         {/* <FooterActions /> */}
       </div>
     </div>
@@ -61,3 +71,18 @@ export default function App() {
 }
 
 
+
+
+
+
+// <div style={{ marginTop: "2.62rem" }}>
+//           <PortfolioTable />
+//         </div>
+//         <div style={{ 
+//           display: 'flex', 
+//           justifyContent: 'space-between', 
+//           padding: '20px' 
+//         }}>
+//           {/* <StackingCard />
+//           <NewsCard /> */}
+//         </div>
