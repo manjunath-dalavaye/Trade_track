@@ -5,13 +5,14 @@
 
 
 .news-card {
- margin-left:4.5rem;
-  width: 23rem;
+ margin-left:2.8rem;
+  width: 23.2rem;
   height: 17.4375rem;
   border-radius: 0.75rem;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-top: 2rem;
+
 
   .ant-card-cover {
     position: relative;
@@ -76,6 +77,6 @@
 .show-all-news .ant-btn {
   color: $primary-color; 
   border: none;
-  margin-left:18.6rem;
+  margin-left:17.6rem;
   font-size: 1.2rem;
 }
