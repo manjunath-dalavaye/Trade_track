@@ -5,11 +5,13 @@
 
 
 .news-card {
-  width: 25rem;
-  height: 16.4375rem;
+ margin-left:4.5rem;
+  width: 23rem;
+  height: 17.4375rem;
   border-radius: 0.75rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   .ant-card-cover {
     position: relative;
@@ -35,6 +37,9 @@
       color: $ternary-text-color; 
       line-height: 1;
       float: left;
+      font-size: 1.5rem;
+      
+      margin-top: 0.5rem;
     }
 
     .date {
@@ -46,16 +51,21 @@
       float: left;
       clear: left;
       margin-left: 0.1875rem;
+      font-size: 0.99rem;
     }
 
     .summary {
       font-size: 1rem;
       color: $primary-color; 
-      margin-top: 0.7rem;
+      margin-bottom: 5rem;
       line-height: 1.05;
       float: left;
       clear: left;
       font-family: $primary-font; 
+      font-size: 1.1999rem;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      
     }
 
     
@@ -66,5 +76,6 @@
 .show-all-news .ant-btn {
   color: $primary-color; 
   border: none;
-  margin-left:2.9rem;
+  margin-left:18.6rem;
+  font-size: 1.2rem;
 }

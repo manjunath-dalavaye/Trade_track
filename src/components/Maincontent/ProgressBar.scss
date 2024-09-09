@@ -1,68 +1,73 @@
 .progress-card {
-    width: 18.75rem; // 300px
-  }
-  
-  .progress-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .progress-title {
-    color: #9FA2B2;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: 'DM Sans';
-    font-size: 1.125rem; // 18px
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .expand-limit-button {
-    color: #453DE0;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: 'DM Sans';
-    font-size: 1.209rem; // 19.355px
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0;
-  }
-  
-  .progress-circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .circle-container {
-    width: 7.5625rem; // 121px
-    height: 7.5625rem; // 121px
-    position: relative;
-  }
-  
-  .progress-format {
-    font-size: 0.75rem; // 12px
-    text-align: center;
-  }
-  
-  .progress-percent {
-    color: #4C506B;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: 'DM Sans';
-    font-size: 1.548rem; // 24.763px
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.45; // 23.574px / 16px
-  }
-  
-  .progress-label {
-    color: #9FA2B2;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: 'DM Sans';
-    font-size: 0.844rem; // 13.507px
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
+  width: 23.1875rem; // Set the width of the card
+  height: 11.5rem; // Set the height of the card
+  flex-shrink: 0; // Prevent the card from shrinking
+  border-radius: 0.75rem; // Rounded corners
+  background: #FFF; // Background color
+ margin-top: 2.56rem;
+ margin-left: 1.88rem;
+}
+
+.progress-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-title {
+  color: #9FA2B2;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'DM Sans';
+  font-size: 1.125rem; // Font size for the title
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.expand-limit-button {
+  color: #453DE0;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'DM Sans';
+  font-size: 1.25rem; // Font size for the button
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+}
+
+.progress-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-container {
+  width: 8rem; // circle width
+  height: 8rem; //  circle height
+  position: relative;
+}
+
+.progress-format {
+  font-size: 0.8rem; // Font size for progress format
+  text-align: center;
+}
+
+.progress-percent {
+  color: #4C506B;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'DM Sans';
+  font-size: 1.548rem; // Font size for progress percentage
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.progress-label {
+  color: #9FA2B2;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'DM Sans';
+  font-size: 0.9rem; // Font size for progress label
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

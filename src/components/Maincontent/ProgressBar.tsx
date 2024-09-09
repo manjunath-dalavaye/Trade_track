@@ -48,3 +48,4 @@ const ProgressBar: React.FC = () => {
 };
 
 export default ProgressBar;
+

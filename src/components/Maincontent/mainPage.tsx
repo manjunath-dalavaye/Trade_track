@@ -1,8 +1,6 @@
-import PieChartCircle from "./PieChartCircle";
-import ProgressBar from "./ProgressBar";
 import React, { useState } from "react";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
-import {Card, Tabs } from "antd";
+import { Card, Tabs } from "antd";
 import { useGetChartDataQuery } from "../../Services/ChartApi";
 import './mainPage.scss';
 
@@ -36,31 +34,35 @@ const MainPage: React.FC = () => {
 
   return (
     <div className="container">
-<Card className="main-card">
-  <div className="text">
-  Your Balance
-  </div>
-      <div className="balance"> ${totalBalance.toLocaleString()}</div>
-      <ResponsiveContainer width="100%" height={70}>
-        <LineChart data={data[activeKey]}>
-          <Line
-            type="monotone"
-            dataKey="pv"
-            stroke="#4A4A4A"
-            strokeWidth={2}
-            dot={false}
-          />
-        </LineChart>
-      </ResponsiveContainer>
-      <Tabs defaultActiveKey="today" onChange={(key) => setActiveKey(key)}>
-        <TabPane tab="Today" key="today" />
-        <TabPane tab="This Week" key="week" />
-        <TabPane tab="This Month" key="month" />
-        <TabPane tab="This Year" key="year" />
-      </Tabs>
-    </Card>
+      <Card className="main-card">
+        <div className="text">Your Balance</div>
+        <div className="balance"> ${totalBalance.toLocaleString()}</div>
+        <ResponsiveContainer width="100%" height={70}>
+          <LineChart data={data[activeKey]}>
+            <Line
+              type="monotone"
+              dataKey="pv"
+              stroke="#4A4A4A"
+              strokeWidth={2}
+              dot={false}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+        <Tabs 
+          defaultActiveKey="today" 
+          onChange={(key) => setActiveKey(key)}
+          tabBarStyle={{
+            borderBottom: "none", // Remove bottom border
+            textAlign: "center"    // Center align the tabs
+          }}
+        >
+          <TabPane tab="Today" key="today" />
+          <TabPane tab="This Week" key="week" />
+          <TabPane tab="This Month" key="month" />
+          <TabPane tab="This Year" key="year" />
+        </Tabs>
+      </Card>
     </div>
-    
   );
 };
 

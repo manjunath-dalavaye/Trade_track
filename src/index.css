@@ -1,20 +1,16 @@
 
-#root {
-  --base-font-size: 16px;
-}
-
 html {
-  font-size: calc(0.8vw + 0.02rem); 
+
+  /* overflow-y: hidden; */
+  font-size: 10px;
+  
+  
 }
-
-
-
-
-
-
-body {
-  font-size: 1rem;
+body{
   width: 100vw;
-   height: 100vh;
+  height: 100vh;
 }
+
+
+
 

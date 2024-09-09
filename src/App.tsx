@@ -1,18 +1,11 @@
-import { Col, Layout, Row } from "antd";
 import Sidebar from "./components/SidebarComponent/Sidebar";
 import Header from "./components/HeaderComponent/Header";
 import "./styles/global.scss";
 import MainPage from "./components/Maincontent/mainPage";
-
-// import NewsSection from "./components/NewsSectionComponent/NewsSection";
-// import NftSection from "./components/NFTComponent/NFT";
-// import StackSection from "./components/StackComponent/StackSection";
-// import Wallet from "./components/WalletComponent/Wallet";
-// import { Route, Routes } from "react-router-dom";
-import "./App.css"
-// import Dashboard from "./components/Dashboard/Dashboard";
 import PortfolioTable from "./components/TableComponent/TableComponent";
-// import CombinedCard from "./components/Maincontent/CombineCard";
+import PieChartCircle from "./components/Maincontent/PieChartCircle";
+import ProgressBar from "./components/Maincontent/ProgressBar";
+import TransactionCount from "./components/Maincontent/TransactionCount";
 import CryptoCard from "./components/Maincontent/CryptoCard";
 import Stacking from "./components/Maincontent/Stacking";
 import NewsCard from "./components/Maincontent/NewsCard";
@@ -20,53 +13,53 @@ import NewsCard from "./components/Maincontent/NewsCard";
 
 export default function App() {
   return (
-    <Layout style={{ minHeight: "100vh", borderRadius: "0 12px 14px 8px" }}>
-      <Layout.Sider>
-        <Sidebar />
-      </Layout.Sider>
-
-      <Layout>
-       <Header />
-       <Row>
-        <Col span={10}>
+    <div style={{ 
+      display: 'flex', 
+      flexDirection: 'row', 
+      width: '100vw', 
+      overflow: 'hidden'  // Ensure no horizontal overflow
+    }}>
+      <Sidebar />
+      <div style={{ 
+        flex: 1, 
+        background: '#f8f9fd', 
+        overflowX: 'hidden',  // Prevent horizontal overflow in the main content
+        boxSizing: 'border-box',  // Ensure padding doesn't affect total width
+        paddingRight: '16px'  // Add some padding to avoid content touching the edge
+      }}>
+        <Header />
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between',  // Distribute the elements properly
+          flexWrap: 'wrap',  // Ensure responsive behavior if the screen is smaller
+          padding: '16px'  // Some padding for breathing space
+        }}>
           <MainPage />
-        </Col>
-        <Col span={8}>
-       
-
-        </Col>
-        <Col span={6}>
-
-        </Col>
-       </Row>
-       <Row>
-        <Col span={18}>
-      <PortfolioTable />
-        </Col>
-        <Col span={6}>
-           <CryptoCard/>
-           <Stacking />
-            
-           <NewsCard/>
-        </Col>
+          <PieChartCircle />
+          <div>
+            <ProgressBar />
+            <TransactionCount />
+          </div>
+        </div>
         
-                                                           
-        
-       </Row>
-      </Layout>
-    </Layout>
+        <div style={{ 
+          display: 'flex', 
+          marginTop: "2.62rem", 
+          marginLeft:"1rem", 
+          justifyContent: 'space-between'
+        }}>
+          <PortfolioTable />
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            marginLeft: '2rem',  // Some space between the table and the cards
+          }}>
+            <CryptoCard /> 
+            <Stacking />
+            <NewsCard/>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
-
-
-       {/* <Routes>
-          <Route path="/News" element={<NewsSection />} />
-          <Route path="/NFT" element={<NftSection />} />
-          <Route path="/Stack" element ={<StackSection />} />
-          <Route path="/Wallet" element ={<Wallet />} />
-        </Routes> */}
-
-
-
-                                                         
-        
