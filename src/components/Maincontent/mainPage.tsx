@@ -37,7 +37,7 @@ const MainPage: React.FC = () => {
       <Card className="main-card">
         <div className="text">Your Balance</div>
         <div className="balance"> ${totalBalance.toLocaleString()}</div>
-        <ResponsiveContainer width="100%" height={70}>
+        <ResponsiveContainer width="100%" height={64}>
           <LineChart data={data[activeKey]}>
             <Line
               type="monotone"

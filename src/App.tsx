@@ -29,6 +29,8 @@ export default function App() {
       }}>
         <Header />
         <div style={{ 
+          margin:0,
+          padding:0,
           display: 'flex', 
            // Distribute the elements properly
           flexWrap: 'wrap',  // Ensure responsive behavior if the screen is smaller

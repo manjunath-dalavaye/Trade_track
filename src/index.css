@@ -1,7 +1,6 @@
 
 html {
 
-  /* overflow-y: hidden; */
   font-size: 10px;
   
   
@@ -9,6 +8,7 @@ html {
 body{
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 
