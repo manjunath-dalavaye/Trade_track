@@ -1,7 +1,7 @@
 import { PureComponent } from "react";
 import { Card } from "antd";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
-
+ 
 interface RenderActiveShapeProps {
   cx: number;
   cy: number;
@@ -15,7 +15,7 @@ interface RenderActiveShapeProps {
   percent: number;
   value: number;
 }
-
+ 
 const data = [
   { name: "IBM", value: 400 },
   { name: "TSCO.LON", value: 300 },
@@ -25,7 +25,7 @@ const data = [
   { name: "GPV.TRV", value: 250 },
   { name: "MBG.DEX", value: 350 },
 ];
-
+ 
 const COLORS = [
   "#A4A0D3", // Darker pastel purple
   "#8E77D1", // Darker and richer pastel purple
@@ -35,7 +35,7 @@ const COLORS = [
   "#9B9F9F", // Darker gray
   "#B0B3B8", // Slightly darker light gray
 ];
-
+ 
 const renderActiveShape = (props: unknown): JSX.Element => {
   const {
     cx,
@@ -50,7 +50,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
     percent,
     value,
   } = props as RenderActiveShapeProps;
-
+ 
   const RADIAN = Math.PI / 180;
   const sin = Math.sin(-RADIAN * midAngle);
   const cos = Math.cos(-RADIAN * midAngle);
@@ -61,7 +61,7 @@ const renderActiveShape = (props: unknown): JSX.Element => {
   const ex = mx + (cos >= 0 ? 1 : -1) * 15;
   const ey = my;
   const textAnchor = cos >= 0 ? "start" : "end";
-
+ 
   return (
     <g>
       <text
@@ -118,18 +118,18 @@ const renderActiveShape = (props: unknown): JSX.Element => {
     </g>
   );
 };
-
+ 
 export default class PieChartCircle extends PureComponent {
   state = {
     activeIndex: 0,
   };
-
+ 
   onPieEnter = (_: unknown, index: number) => {
     this.setState({
       activeIndex: index,
     });
   };
-
+ 
   render() {
     return (
       <Card
