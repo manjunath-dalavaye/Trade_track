@@ -10,9 +10,7 @@ import {
   Coin,
   Etherum,
 } from "../../icons/Icons";
-import { Spin } from "antd";
 import TableSkeleton from "./TableSkeleton";
-import { Footer } from "antd/es/layout/layout";
 
 interface TableData {
   key: string;
@@ -135,9 +133,7 @@ const PortfolioTable = () => {
   } else {
     return (
       <div className="portfolio-table-container">
-        <Table columns={columns} dataSource={tableData} pagination={false}  footer={() => 'Footer'} bordered={true}
-        style={{paddingBottom :'10px'}}
-        />
+        <Table columns={columns} dataSource={tableData} pagination={false} />
       </div>
     );
   }
