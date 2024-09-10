@@ -1,31 +1,27 @@
-import React, { Children, ReactNode } from "react";
+import React from "react";
 import { render, renderHook, screen, waitFor } from "@testing-library/react";
 import PortfolioTable from "../../components/TableComponent/TableComponent";
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 import { Provider } from "react-redux";
 import { store } from "../../Redux Store/store";
 import { useGetDataQuery } from "../../Services/Api";
 
-
-
-describe('Test For Table Component', () => {
-  test('Table renders correctly', async () => {
-    
-  render(<PortfolioTable />,{
-    wrapper:({children})=><Provider store={store}>{children}</Provider>
-  })
-
+describe("Test For Table Component", () => {
+  test("test for custom hook", async () => {
+    const { result } = renderHook(() => useGetDataQuery(), {
+      wrapper: ({ children }) => <Provider store={store}>{children}</Provider>,
+    });
     await waitFor(() => {
-      expect(screen.getByRole('table')).toBeInTheDocument();
+      expect(result.current.isSuccess).toBe(true);
     });
   });
-  test("test for custom hook", async()=>{
-    const {result} = renderHook(()=>useGetDataQuery(),{
-        wrapper:({children})=><Provider store={store}>{children}</Provider>
-    })
-   await waitFor(()=>{
-    expect(result.current.isSuccess).toBe(true);
-   })
-    
-  })
+  test("Table renders correctly", async () => {
+    render(<PortfolioTable />, {
+      wrapper: ({ children }) => <Provider store={store}>{children}</Provider>,
+    });
+
+    await waitFor(() => {
+      expect(screen.getByRole("table")).toBeInTheDocument();
+    });
+  });
 });

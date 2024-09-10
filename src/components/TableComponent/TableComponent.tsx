@@ -119,17 +119,23 @@ const PortfolioTable = () => {
   if (isLoading) {
     return <TableSkeleton />;
   } else if (isError) {
-    return <div style={{
-        width: '64.625rem',
-        height: '30.875rem',
-        flexShrink: 0,
-        marginLeft: '3.54rem',
-        borderRadius: '0.375rem',
-        overflow: 'hidden',
-        display:"flex",
-        justifyContent:"center",
-        alignItems:"center",
-      }}><h3>Error While Fetching Data</h3></div>;
+    return (
+      <div
+        style={{
+          width: "64.625rem",
+          height: "30.875rem",
+          flexShrink: 0,
+          marginLeft: "3.54rem",
+          borderRadius: "0.375rem",
+          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h3>Error While Fetching Data</h3>
+      </div>
+    );
   } else {
     return (
       <div className="portfolio-table-container">
