@@ -75,14 +75,3 @@ export default function App() {
 
 
 
-// <div style={{ marginTop: "2.62rem" }}>
-//           <PortfolioTable />
-//         </div>
-//         <div style={{ 
-//           display: 'flex', 
-//           justifyContent: 'space-between', 
-//           padding: '20px' 
-//         }}>
-//           {/* <StackingCard />
-//           <NewsCard /> */}
-//         </div>
