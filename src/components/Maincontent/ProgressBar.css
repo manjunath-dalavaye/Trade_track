@@ -1,0 +1,67 @@
+.progress-card {
+  width: 18.75rem;
+}
+
+.progress-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-title {
+  color: #9FA2B2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.expand-limit-button {
+  color: #453DE0;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 1.209rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+}
+
+.progress-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-container {
+  width: 7.5625rem;
+  height: 7.5625rem;
+  position: relative;
+}
+
+.progress-format {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.progress-percent {
+  color: #4C506B;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 1.548rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.progress-label {
+  color: #9FA2B2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 0.844rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=ProgressBar.css.map */
