@@ -1,0 +1,78 @@
+
+
+@import '../../styles/global.scss';
+
+.stacking-container {
+  margin-left: 2.6rem;
+  width: 23.2rem;
+  height: auto; 
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  margin-top: -0.6rem;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.title-left {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #474D57;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: $primary-font;
+  margin-top: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #929AA5;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: $primary-font;
+  margin-bottom: 1.5rem;
+}
+
+.card-content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem; /* Converted 8px */
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: $primary-font;
+}
+
+.card-content1,
+.card-content3 {
+  font-size: 1rem;
+  color: #929AA5;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: $primary-font;
+}
+
+.card-content2,
+.card-content4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #474D57;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: $primary-font;
+}
+
+.ant-card-body {
+  padding: 0; 
+}
+
+.card-content-row:last-child {
+  margin-bottom: 0;
+}
+
+
+.stacking-container,
+.ant-card-body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

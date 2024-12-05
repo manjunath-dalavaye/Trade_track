@@ -1,0 +1,73 @@
+
+  .container {
+    width: 60.375rem;
+    height: 17.625rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    margin-top: 2.56rem;
+    margin-left: 3.14rem;
+    margin-top: 2.56rem;
+    margin-left: 3.14rem;
+    background: #FFF;
+  }
+
+
+  
+  .balance {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .text{
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+
+
+  .ant-tabs-tab-btn {
+   
+    color: var(--Text, #4C506B);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.full-width-tabs {
+  width: 100% !important; 
+  .ant-tabs-nav {
+    width: 100%;
+  }
+  .ant-tabs-tab {
+    flex: 1;
+    text-align: center; 
+  }
+}
+
+
+  
+
+
+  .ant-tabs-tab-btn {
+   
+    color: var(--Text, #4C506B);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.full-width-tabs {
+  width: 100% !important; 
+  .ant-tabs-nav {
+    width: 100%;
+  }
+  .ant-tabs-tab {
+    flex: 1;
+    text-align: center; 
+  }
+}
+

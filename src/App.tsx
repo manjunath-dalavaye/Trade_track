@@ -1,35 +1,88 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Sidebar from "./components/SidebarComponent/Sidebar";
+import Header from "./components/HeaderComponent/Header";
+import "./styles/global.scss";
+import MainPage from "./components/Maincontent/mainPage";
+import PortfolioTable from "./components/TableComponent/TableComponent";
+import PieChartCircle from "./components/Maincontent/PieChartCircle";
+import ProgressBar from "./components/Maincontent/ProgressBar";
+import TransactionCount from "./components/Maincontent/TransactionCount";
+import CryptoCard from "./components/Maincontent/CryptoCard";
+import Stacking from "./components/Maincontent/Stacking";
+import NewsCard from "./components/Maincontent/NewsCard";
 
+
+
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{ 
+      display: 'flex', 
+      flexDirection: 'row', 
+      width: '100vw', 
+      overflow: 'hidden'  // Ensure no horizontal overflow
+    }}>
+      <Sidebar />
+      <div style={{ 
+        flex: 1, 
+        background: '#f8f9fd', 
+        overflowX: 'hidden',  // Prevent horizontal overflow in the main content
+        boxSizing: 'border-box',  // Ensure padding doesn't affect total width
+   // Add some padding to avoid content touching the edge
+      }}>
+        <Header />
+        <div style={{ 
+          margin:0,
+          padding:0,
+          display: 'flex', 
+           // Distribute the elements properly
+          flexWrap: 'wrap',  // Ensure responsive behavior if the screen is smaller
+         // Some padding for breathing space
+        }}>
+          <MainPage />
+          <PieChartCircle />
+          <div>
+            <ProgressBar />
+            <TransactionCount />
+          </div>
+        
+        </div>
+        <div style={{ 
+          display: 'flex', 
+          marginTop: "2.62rem", 
+          marginLeft:"1rem", 
+        }}>
+          <PortfolioTable />
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            // Some space between the table and the cards
+          }}>
+            <CryptoCard /> 
+            <Stacking />
+            <NewsCard/>
+          </div>
+        </div>
+        
+        {/* <FooterActions /> */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+
+
+
+
+
+// <div style={{ marginTop: "2.62rem" }}>
+//           <PortfolioTable />
+//         </div>
+//         <div style={{ 
+//           display: 'flex', 
+//           justifyContent: 'space-between', 
+//           padding: '20px' 
+//         }}>
+//           {/* <StackingCard />
+//           <NewsCard /> */}
+//         </div>
